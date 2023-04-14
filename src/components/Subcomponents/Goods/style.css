@@ -1,0 +1,26 @@
+.portfolioCard {
+    margin: 1px;
+}
+
+/* .tabletop {
+    padding-left: 20%;
+} */
+
+.aboutBack {
+    background: radial-gradient(circle, #02c2cd, #fce4e4);
+    /* padding-top: 2px; */
+}
+.text{
+    color: #f7e290;
+  }
+
+.tourWords{
+    text-align: center;
+    font-family: 'Carattere', bold;
+    font-size: 80px;
+    font-weight: 600;
+}
+.tourTitle{
+    text-align: center;
+    font-size: 110px;
+}

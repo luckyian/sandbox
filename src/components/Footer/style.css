@@ -13,5 +13,6 @@
   background: #B8B8B8;
 } */
 .foot {
-  background: radial-gradient(circle, #0a2d38, #145b70, #1e8eb0);
+  background: radial-gradient(circle, #fce4e4, #02c2cd);
+  color: #f7e290;
 }

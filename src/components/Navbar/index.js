@@ -7,9 +7,9 @@ import Nav from 'react-bootstrap/Nav';
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navibar() {
     return (
-        <Navbar expand="md" className="navitext" variant="dark" sticky="top">
-            <div className="col-md-9">
-                <Navbar.Brand href="#"  >Ian Wren</Navbar.Brand>
+        <Navbar expand="md" className="navibar text" variant="dark" sticky="top">
+            <div className="col-md-8">
+                <Navbar.Brand className="text" href="#"  >Merry Little Baker</Navbar.Brand>
                 <Navbar.Toggle  className="float-right" type="button" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation" />
@@ -17,10 +17,13 @@ function Navibar() {
             <div className="col-md-3">
                 <Navbar.Collapse id="navbarNavAltMarkup">
                     <Nav>
-                        <Nav.Link href="#/index" >Home</Nav.Link>
-                        <Nav.Link href="#/contact" className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}>Contact</Nav.Link>
-                        <Nav.Link href="#/portfolio" >Portfolio</Nav.Link>
-                        <Nav.Link href="#" className="nav-link" tabindex="3" aria-disabled="true"> </Nav.Link>
+                        <Nav.Link className="text" href="/#/index" >Home</Nav.Link>
+                        <Nav.Link className="text" href="#/cakes" >Cakes</Nav.Link>
+                        <Nav.Link className="text" href="#/cupcakes" >Cupcakes</Nav.Link>
+                        {/* <Nav.Link href="/fortressofthebear/#/store" >Store</Nav.Link> */}
+                        <Nav.Link className="text" href="/#/contact" >Order</Nav.Link>
+                        {/* <Nav.Link href="/fortressofthebear/#/login" >Join</Nav.Link> */}
+                        <Nav.Link href="#" className="nav-link" tabindex="5" aria-disabled="true"> </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </div>

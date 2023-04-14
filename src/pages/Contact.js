@@ -1,64 +1,68 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import "./style.css";
+import Logo from "../components/Subcomponents/Logo";
+import Card from 'react-bootstrap/Card';
+import Menu from '../components/Subcomponents/Menu';
+
 
 function Contact() {
 
+
+
   return (
+
+
     <div>
-      <br></br>
-    <Card className="aboutBack">
-      <Card.Body>
-        <Card.Title>
-          <h1>Contact</h1>
+      <div className="mt-5">
+        <h1 className="text2">Order</h1>
+        <Menu />
 
-        </Card.Title>
+        <Card className="aboutBack">
+          <Card.Body className="text">
+            <div className="boxer">
+              <h3>Facebook/Instagram:</h3>
+              <h4 className="fontSize">@merrylittlebaker</h4>
+            </div>
+          </Card.Body>
+        </Card>
+        <br />
+        <Card className="aboutBack">
+          <Card.Body className="text">
+          <h1 className="text3">I do NOT ship</h1>
+          <div className="boxer">
+              <h3>Contact:</h3>
+              <h4 className="fontSize">Order:</h4>
+              <h4 className="fontSize">Order@MerryLittleBaker.com</h4>
+              <br></br>
+              <h4 className="fontSize">Info:</h4>
+              <h4 className="fontSize">Info@MerryLittleBaker.com</h4>
+            </div>
+          </Card.Body>
+        </Card>
+        <br />
+        <Card className="aboutBack">
+          <Card.Body className="text">
+            <div className="boxer">
+              <h3>Phone:</h3>
+              <h4 className="fontSize">425-308-1663</h4>
+            </div>
+          </Card.Body>
+        </Card>
 
-        <Form>
-          <Form.Group>
-            <Form.Label for="exampleFormControlInput1">Name</Form.Label>
-            <Form.Control type="email" className="form-control" id="exampleFormControlInput1"
-              placeholder="Jane Doe"></Form.Control>
-          </Form.Group>
-          <Form.Group>
-            <Form.Label for="exampleFormControlInput1">Email address</Form.Label>
-            <Form.Control type="email" className="form-control" id="exampleFormControlInput1"
-              placeholder="name@example.com"></Form.Control>
-          </Form.Group>
 
-          <Form.Group>
-            <Form.Label for="exampleFormControlTextarea1">Comments/Questions</Form.Label>
-            <Form.Control id="exampleFormControlTextarea1" rows="3"></Form.Control>
-          </Form.Group>
-          <Button type="submit" className="btn btn-primary">Submit</Button>
-        </Form>
-
-      </Card.Body>
-      <br></br>
+      </div >
+    </div >
 
 
 
-    </Card>
-    <br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-    
-    </div>
+
+
+
+
+
 
   );
-
 }
 
 export default Contact;
